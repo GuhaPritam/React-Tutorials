@@ -1,9 +1,9 @@
-import TodoList from "./Components/Map/TodoList";
+import AllOperators from "./Components/Operators/AllOperators";
 
 const App = () => {
   return (
     <div>
-      <TodoList />
+      <AllOperators />
     </div>
   );
 };
