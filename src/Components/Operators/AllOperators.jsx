@@ -1,8 +1,8 @@
 /*
 -------------- Example of And (&&) Operator ------------------
 
--- It will go 1st expretion and check the value is true or false if true then it 
-    will go next expretion or If it false it will stay in 1st expretion only.
+-- It will go 1st expression and check the value is true or false if true then it 
+    will go next expression or If it false it will stay in 1st expression only.
 
 -- const result1 = name && "JavaScript"( true && print the value ) or ( false && print false )
 
