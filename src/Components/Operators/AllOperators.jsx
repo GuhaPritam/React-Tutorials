@@ -1,3 +1,6 @@
+// ALERT 🚨 Before implement please change the functions.
+
+
 /*
 -------------- Example of And ( && ) Operator ------------------
 
