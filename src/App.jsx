@@ -1,4 +1,4 @@
-import UseEffect from "./Components/UseEffect/Project2";
+import UseEffect from "./Components/UseEffect/Count";
 
 const App = () => {
   return (
