@@ -1,9 +1,9 @@
-import AllOperators from "./Components/Operators/AllOperators";
+import UseEffect from "./Components/UseEffect/ApiDataFetching";
 
 const App = () => {
   return (
     <div>
-      <AllOperators />
+      <UseEffect />
     </div>
   );
 };
