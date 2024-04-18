@@ -1,4 +1,4 @@
-import UseEffect from "./Components/UseEffect/ApiDataFetching";
+import UseEffect from "./Components/UseEffect/Project2";
 
 const App = () => {
   return (
