@@ -1,25 +1,22 @@
 import { useState, useEffect } from 'react';
 
 export default function DataFetching() {
-    const [user, setUser] = useState([]);
+    const [condition, setCondition] = useState(false);
+    const [count, setCount] = useState(0); 
+    // console.log(condition)
+    // console.log(count)
 
+    const handleClick = () => {
+        setCondition(!condition);
+    };
+    
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(data => setUser(data))
-            .catch(error => console.error('Error fetching users:', error));
-    }, []);
+        setCount(prevCount => prevCount + 1);
+    }, [condition]);
 
     return (
-        <>
-            <div>
-                <h1>User List</h1>
-                <ul>
-                    {user.map(user => (
-                        <li key={user.id}>{user.name}</li>
-                    ))}
-                </ul>
-            </div>
-        </>
+        <div>
+            <button onClick={handleClick}>Count {count}</button>
+        </div>
     );
 }

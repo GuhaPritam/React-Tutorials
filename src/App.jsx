@@ -1,4 +1,4 @@
-import UseEffect from "./Components/UseEffect/Count";
+import UseEffect from "./Components/UseEffect/ApiDataFetching";
 
 const App = () => {
   return (

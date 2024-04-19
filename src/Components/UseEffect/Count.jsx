@@ -10,7 +10,7 @@ export default function Count() {
     useEffect(() => {
         let timer = setTimeout(timeOut, 1000);
         return () => clearTimeout(timer)    
-    }, []);
+    });
 
     return (
         <>
