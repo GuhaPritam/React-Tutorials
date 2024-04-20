@@ -1,22 +1,22 @@
 import { useEffect, useState } from 'react';
 
-export default function Count() {
+export default function Counter() {
     const [count, setCount] = useState(0);
+    const[canculation, setCalculation] = useState(0)
 
-    const timeOut = () => {
-        setCount(oldValue => oldValue + 1); 1000
-    };
+    function handelClick() {
+        setCount(prevCount => prevCount + 1);
+    }
 
     useEffect(() => {
-        let timer = setTimeout(timeOut, 1000);
-        return () => clearTimeout(timer)    
-    });
+        setCalculation(count * 2);
+    }, [count]);
 
     return (
         <>
-            <div>
-                <h1>I have rendered {count} times!</h1>
-            </div>
+            <p>Count: {count}</p>
+            <button onClick={handelClick}>+</button>
+            <p>Calculation: {canculation}</p>
         </>
     );
 }
