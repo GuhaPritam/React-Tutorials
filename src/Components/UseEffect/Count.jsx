@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export default function Counter() {
     const [count, setCount] = useState(0);
     const[canculation, setCalculation] = useState(0)
-
+    
     function handelClick() {
         setCount(prevCount => prevCount + 1);
     }
