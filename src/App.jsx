@@ -1,9 +1,9 @@
-import UseEffect from "./Components/UseEffect/ApiDataFetching";
+import UseRef from "./Components/UseRef/Project1";
 
 const App = () => {
   return (
     <div>
-      <UseEffect />
+      <UseRef />
     </div>
   );
 };
