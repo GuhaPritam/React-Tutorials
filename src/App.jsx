@@ -1,9 +1,9 @@
-import UseRef from "./Components/UseRef/Project1";
+import UseMemo from "./Components/UseMemo/Project1";
 
 const App = () => {
   return (
     <div>
-      <UseRef />
+      <UseMemo />
     </div>
   );
 };
